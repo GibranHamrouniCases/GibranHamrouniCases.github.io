@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Document</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="index.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+
+<body>
+    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+    <div class="mylayout">
+        <h1>Portfolio</h1>
+
+        <a href="homepage.html" id="button">Home</a>
+
+        <h2>WEEK 1</h2>
+
+        <h3>UK and France Trade </h3>
+        <p>This first chart represents trade between the United Kingdom and France in billions of dollars.</p>
+        <div class="chart" id="w1chart1"></div>
+
+        <h3>Foreign Direct Investment in the UK</h3>
+        <p>This Second Chart chart represents inward Foreign Direct Investment in the United Kingdom in billions of dollars.</p>
+        <div class="chart" id="w1chart2"> </div>
+
+        <h2>WEEK 2</h2>
+
+        <h3>Chart 1</h3>
+      <div class="chart" id="w2chart1">
+        <script>
+        var myChart1 = "chart1_covidUKRegions.json";
+        vegaEmbed('#w2chart1', w2chart1);
+        </script>
+        </div>
+
+        <h3>Chart 2</h3>
+     <div class="chart" id="w2chart2">
+        <script>
+        var myChart2 = "chart2_ukProductivity.json";
+         vegaEmbed('#w2chart2', w2chart2);
+        </script>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fuga ipsum eligendi, et ullam doloremque? Sunt placeat eligendi ex magni earum porro exercitationem quod non.</p>
+
+    </div> 
+</body>
+
+
+<script>
+    //Define charts:
+    var w1chart1 = "w1chart1.json";
+    var w1chart2 = "w1chart2.json";
+    var w2chart1 = "w2chart1.json";
+    var w2chart2 = "w2chart2.json";
+
+    // Embed charts:
+    vegaEmbed('#w1chart1', w1chart1);
+    vegaEmbed('#w1chart2', w1chart2);
+    vegaEmbed('#w2chart1', w2chart1);
+    vegaEmbed('#w2chart2', w2chart2);
+</script>
+
+</html>
