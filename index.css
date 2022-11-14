@@ -23,7 +23,7 @@ h1, h3, p{
     
 .mylayout{
     margin: auto;
-    max-width: 600px;
+    max-width: 1000px;
     background-color: bisque;
 }
 
@@ -31,7 +31,7 @@ h1, h3, p{
 /* Set the apperance of the class, chart */
 .chart{
     background-color: none;
-    width:330px;
+    width:500px;
     border-width: 2px;
     border-style: solid;
     border-radius: none;
