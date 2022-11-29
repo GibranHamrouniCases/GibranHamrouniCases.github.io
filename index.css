@@ -11,12 +11,12 @@
     --heading-color: black; /*BLACK*/
 }
  [data-theme="dark"] {
-    --font-color: #9a97f3;
-    --bg-color: #818cab;
-    --color1:  #e1e1ff;
-    --color2: #161625;
-    --color3: #161625;
-    --heading-color: #818cab; 
+    --font-color: #7d7d7d;
+    --bg-color: #717171;
+    --color1:  #001829;
+    --color2: #6e5500;
+    --color3: #4c0000;
+    --heading-color: #f2f2f2; 
 }
 /* HEADER*/
 .header{
