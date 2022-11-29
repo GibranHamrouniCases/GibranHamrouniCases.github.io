@@ -1,135 +1,256 @@
-/* Richard Davies, Data Science for Economists */
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
 
-/* This is my first proper css file */
-
-/* Import a font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-
-/* Set the background color for my page: */
-body{
-    background-color: rgb(233, 233, 233);
- 
+:root {
+    --font-color: white; /*WHITE*/
+    --bg-color: #e7e7e7; /*GREY*/
+    --color1: #003153; /*BLUE*/
+    --color2: #e1ad01; /*YELLOW*/
+    --color3: #9c0000; /*RED*/
+    --heading-color: black; /*BLACK*/
+}
+ [data-theme="dark"] {
+    --font-color: #9a97f3;
+    --bg-color: #818cab;
+    --color1:  #e1e1ff;
+    --color2: #161625;
+    --color3: #161625;
+    --heading-color: #818cab; 
+}
+/* HEADER*/
+.header{
+    color: var(--heading-color); /*BLACK*/
+    text-align: center;
+    border: none;
+    margin: 0;
+    padding-bottom: 30px;
 }
 
-/* Choose the appearance of the tags, h1, h3 and p: */
-h1, h3, p{
-    color:rgb(17, 17, 17);
-    font-family: 'Roboto', sans-serif;
+/* BODY */
+.body{
+    margin: auto;
+    width: 95%;
+    background-color: var(--color1); /*BLUE*/
+    color: var(--font-color);
+    border:25px;
+    border-color:transparent;
+    border-style: solid;
+    border-radius: 50px;
     text-align: center;
 }
-    
-.mylayout{
-    margin: auto;
-    max-width: 1000px;
-    background-color: bisque;
+
+/* H1, H2, H3, H4 */
+h1{
+    color: var(--heading-color); /*BLACK*/
+    font-size: 90px; 
+    line-height: 1; 
+    text-align: center;
+    font-family: 'Garamond';
+    margin: 0;
 }
 
-/* Set the apperance of the class, chart */
-.chart{
-    background-color: none;
-    width:500px;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: none;
-    border-color: black;
+h2, h3{
+    color: var(--font-color); /*WHITE*/
+    font-family: 'Garamond', sans-serif;
+    text-align: center;
+}
 
-    
+p{
+    color: var(--font-color); /*WHITE*/
+    font-family: 'Garamond', sans-serif;
+    text-align: justify;
+}
+
+h4{
+    color: var(--heading-color); /*BLACK*/
+    font-size: 45px; 
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 25px;
+}
+
+/* CHART */
+.chart{
+    padding: 20px;
+    background-color: none;
 }
 
 /* BUTTONS */
-
-a{
-    border: 5px;
-    border-color: black;
-    border-style: solid;
-
-    margin:20px
-}
-
-#link1{
-    border-color:pink;
-    border-style:dashed
-}
-
-#link2{
-    border:2px;
-    border-color:black;
-    border-style: solid;
-
-    border-radius: 5px;
-
-}
-
 #button{
-    background-color: rgba(0, 47, 167, .5);
-
-    padding:20px;
-    
-    border:2px;
-    border-color:grey;
-    border-style: solid;
+    background-color: var(--bg-color); /*GREY*/
+    border: none;
     border-radius: 10px;
-
-    font-family: 'Courier New', Courier, monospace;
-    font-weight:700;
-    color:white;
-    
+    width: 20%;
+    color: var(--heading-color); /*BLACK*/
+    font-weight: bolder;
+    padding: 16px 32px;
+    text-align: center;
     text-decoration: none;
-    
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer; 
 }
 
 #button:hover{
-
-    background-color: rgba(0, 47, 167, .8);
-
-    border:2px;
-    border-color:yellow;
-    border-style: solid;
-    
+    background-color: var(--heading-color); /*BLACK*/
+    color: var(--bg-color); /*GREY*/
 }
 
-#link4{
-    background-color: yellow;
-
-    padding:20px;
-    
-    border:20px;
-    border-color:black;
-    border-style: solid;
+#button2{
+    background-color: var(--color1); /*BLUE*/
+    border: none;
     border-radius: 10px;
-
-    font-family: 'Courier New', Courier, monospace;
-    font-weight:700;
-    color:grey;
-    
+    width: 20%;
+    color: var(--font-color); /*WHITE*/
+    font-weight: bolder;
+    padding: 16px 32px;
+    text-align: center;
     text-decoration: none;
-
-    animation: border-pulsate1 4s infinite;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer; 
 }
 
-/* CODE FOR PUSLING BORDERS */
+#button2:hover{
+    background-color: var(--font-color); /*WHITE*/
+    color: var(--color1); /*BLUE*/
+}
 
-  @keyframes border-pulsate1 {
-    0%   { border-color: rgba(230, 34, 75, 1); }
-    50%  { border-color: rgba(230, 34, 75, 0); }
-    100% { border-color: rgba(230, 34, 75, 1); }
-  }
-  
-  @keyframes border-pulsate2 {
-    0%   { border-color: #22e68b}
-    10%  { border-color: rgba(230, 34, 75, 0)}
-    20%  { border-color: rgba(230, 34, 75)}
-    30%  { border-color: rgba(230, 34, 75, 0)}
-    40%  { border-color: rgba(0, 47, 167)}
-    50%  { border-color: rgba(230, 34, 75, 0)}
-    60%  { border-color: rgba(250, 250, 0)}
-    70%  { border-color: rgba(230, 34, 75, 0)}
-    80% { border-color: #22e68b}
+#button3{
+    background-color: var(--color2); /*YELLOW*/
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    color: var(--font-color); /*WHITE*/
+    font-weight: bolder;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer; 
+}
+
+#button3:hover{
+    background-color: var(--font-color); /*WHITE*/
+    color: var(--color2); /*YELLOW*/
+}
+
+#button4{
+    background-color: var(--color3);  /*RED*/
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    color: var(--font-color); /*WHITE*/
+    font-weight: bolder;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer; 
+}
+
+#button4:hover{
+    background-color: var(--font-color); /*WHITE*/
+    color: var(--color3);  /*RED*/
+}
+
+/* STYLE HR */
+hr.dotted{
+    border: none;
+    border-top: 7px dotted var(--font-color); /*WHITE*/
+    width:100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* COLUMNS */
+.doric{
+    column-count: 4;
+}
+
+.ionic{
+    column-count: 2;
+}
+
+/* DOTTED BOX */
+.dotbox{
+    border: 7px dotted;
+    border-radius: 10px;
+    border-color: var(--heading-color); /*BLACK*/ 
+    width:90%;
+    position: relative;
+    padding-top: 100%;
+    animation: border-pulsate 4s infinite;
+}
+
+/* PUSLING BORDERS */
+@keyframes border-pulsate {
+    0%   { border-color: #e7e7e7; } /*GREY*/
+    50%  { border-color: var(--heading-color); } /*BLACK*/
+    100% { border-color: #e7e7e7; } /*GREY*/
   }
 
-  @keyframes myAnimation {
-    0%   {border-color: #22e68b; background-color: black}      
-    50%  {border-color: black; background-color:yellow}
-    
-  }
+/* ////////////////////////////////////  DARK MODE SWITCH //////////////////////////////////// */
+ .theme-switch-wrapper {
+         display: flex;
+         align-items: center;
+}
+ .theme-switch-wrapper em {
+         margin-left: 10px;
+         font-size: 1rem;
+}
+ .theme-switch {
+         display: inline-block;
+         height: 34px;
+         position: relative;
+         width: 60px;
+}
+ .theme-switch input {
+         display: none;
+}
+ .slider {
+         background-color: #ccc;
+         bottom: 0;
+         cursor: pointer;
+         left: 0;
+         position: absolute;
+         right: 0;
+         top: 0;
+         transition: 0.4s;
+}
+ .slider:before {
+         background-color: #fff;
+         bottom: 4px;
+         content: "";
+         height: 26px;
+         left: 4px;
+         position: absolute;
+         transition: 0.4s;
+         width: 26px;
+}
+ input:checked + .slider {
+         background-color: #66bb6a;
+}
+ input:checked + .slider:before {
+         transform: translateX(26px);
+}
+ .slider.round {
+         border-radius: 34px;
+}
+ .slider.round:before {
+         border-radius: 50%;
+}
+/* ////////////////////////////////////  DARK MODE SWITCH //////////////////////////////////// */

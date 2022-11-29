@@ -1,32 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- ///////////////////  HEAD //////////////////////////////////// -->
+<!-- ////////////////////////////////////  HEAD //////////////////////////////////// -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Document</title>
+    <!-- BACKGROUND & BODY-->  
+    <style>:root {--bg-color: #e7e7e7; /*GREY*/ --color3: #9c0000; /*RED*/}
+        [data-theme="dark"] {--bg-color: #818cab; --color3: #161625;}
+        body {background-color: var(--bg-color)}</style>
+     <!-- STYLE SHEET -->
     <link rel="stylesheet" href="index.css">
 </head>
-<!-- ///////////////////  HEAD //////////////////////////////////// -->
+<!-- ////////////////////////////////////  HEAD //////////////////////////////////// -->
 
-<!-- ///////////////////  BODY //////////////////////////////////// -->
-<body>
+<!-- ////////////////////////////////////  DARK MODE //////////////////////////////////// -->
+<nav>
+    <div class="theme-switch-wrapper">
+         <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <div class="slider round"></div>
+    </label>
+      <em>Enable Dark Mode!</em>
+    </div>
+</nav>
+<!-- ////////////////////////////////////  DARK MODE //////////////////////////////////// -->
 
-    <h1>About</h1>
-
+<!-- ////////////////////////////////////  HEADER //////////////////////////////////// -->
+<header>
+    <div class="header">    
+    <h1>DATA SCIENCE 2022/2023</h1>    
+    <h4>All about charts, numbers and data stories.</h4>
+    
     <!--BUTTONS-->
-    <a href="index.html" id="button">Home</a>
-    <a href="portfolio.html" id="button">Portfolio</a>
-    <a href="project.html" id="button">My project</a>
-    <a href="https://github.com/GibranHamrouniCases/GibranHamrouniCases.github.io" id="button">GitHub Account</a>
+    <a href="index.html" id="button4">HOME</a>
+    <a href="portfolio.html" id="button4">PORTFOLIO</a>
+    <a href="project.html" id="button4">MY PROJECT</a>
+    <a href="https://github.com/GibranHamrouniCases/GibranHamrouniCases.github.io" id="button4">GitHub ACCOUNT</a>
+    </div>
+</header>
+<!-- ////////////////////////////////////  HEADER //////////////////////////////////// -->
 
-    <p>Description</p>
+<!-- ////////////////////////////////////  BODY //////////////////////////////////// -->
+<body>
+    <div class="body" style="background-color: var(--color3)">
+        <p>Description</p>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam repellat facilis dolorum recusandae blanditiis repellendus ipsam doloremque voluptas nobis, laborum pariatur, odio assumenda rerum. Perspiciatis consequatur nam sint harum tenetur nihil rerum amet ipsa, quaerat odit, unde esse fugit possimus temporibus corrupti voluptate deleniti aspernatur soluta dolor similique! Alias excepturi officia fugiat, dignissimos sint veritatis, porro voluptate quos ea expedita nostrum ipsum aut laboriosam veniam dolorem quaerat iure ratione itaque explicabo! Nam commodi dolor amet ad, consequatur earum temporibus corporis, quam illo cupiditate non optio! Eaque temporibus odio unde, architecto quibusdam non corporis laboriosam. Sit quia voluptates magnam debitis natus eum velit suscipit ab, asperiores praesentium quas quibusdam cupiditate, vel illo eveniet quam dolores rem eligendi quis accusantium reiciendis nesciunt possimus repudiandae obcaecati. At velit omnis facilis alias nam esse expedita illum laborum quod, assumenda deleniti sapiente animi deserunt tempore laudantium debitis non temporibus impedit quas, sed minus voluptatum accusamus. Iure quo excepturi obcaecati qui libero eveniet nemo nobis? Eaque facilis pariatur mollitia maxime, necessitatibus ab sint non illo aperiam neque inventore culpa nemo dolores labore dolorem aliquam expedita hic libero voluptas accusamus dolore vero. Possimus alias nihil laborum rem ipsum, modi, nostrum blanditiis, porro accusantium vel dolore velit.</p>
-
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam repellat facilis dolorum recusandae blanditiis repellendus ipsam doloremque voluptas nobis, laborum pariatur, odio assumenda rerum. Perspiciatis consequatur nam sint harum tenetur nihil rerum amet ipsa, quaerat odit, unde esse fugit possimus temporibus corrupti voluptate deleniti aspernatur soluta dolor similique! Alias excepturi officia fugiat, dignissimos sint veritatis, porro voluptate quos ea expedita nostrum ipsum aut laboriosam veniam dolorem quaerat iure ratione itaque explicabo! Nam commodi dolor amet ad, consequatur earum temporibus corporis, quam illo cupiditate non optio! Eaque temporibus odio unde, architecto quibusdam non corporis laboriosam. Sit quia voluptates magnam debitis natus eum velit suscipit ab, asperiores praesentium quas quibusdam cupiditate, vel illo eveniet quam dolores rem eligendi quis accusantium reiciendis nesciunt possimus repudiandae obcaecati. At velit omnis facilis alias nam esse expedita illum laborum quod, assumenda deleniti sapiente animi deserunt tempore laudantium debitis non temporibus impedit quas, sed minus voluptatum accusamus. Iure quo excepturi obcaecati qui libero eveniet nemo nobis? Eaque facilis pariatur mollitia maxime, necessitatibus ab sint non illo aperiam neque inventore culpa nemo dolores labore dolorem aliquam expedita hic libero voluptas accusamus dolore vero. Possimus alias nihil laborum rem ipsum, modi, nostrum blanditiis, porro accusantium vel dolore velit.</p>
+    </div>
 </body>
-<!-- ///////////////////  BODY //////////////////////////////////// -->
+<!-- ////////////////////////////////////  BODY //////////////////////////////////// -->
+
+<!-- ////////////////////////////////////  JS DARK MODE //////////////////////////////////// -->
+<script>
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+    
+        if (currentTheme === 'dark') {
+            toggleSwitch.checked = true;
+        }
+    }
+
+    function switchTheme(e) {
+        if (e.target.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+        else {        document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }    
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
+</script>
+<!-- ////////////////////////////////////  JS DARK MODE //////////////////////////////////// -->
 
 </html>

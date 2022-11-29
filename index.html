@@ -1,37 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- ///////////////////  HEAD //////////////////////////////////// -->
+<!-- ////////////////////////////////////  HEAD //////////////////////////////////// -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Document</title>
-
-    <!-- STYLE SHEET -->
+    <!-- BACKGROUND -->  
+    <style>:root {--bg-color: #e7e7e7; /*GREY*/}
+        [data-theme="dark"] {--bg-color: #818cab;}
+        body {background-color: var(--bg-color)}</style>
+     <!-- STYLE SHEET -->
     <link rel="stylesheet" href="index.css">
 
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 </head>
-<!-- ///////////////////  HEAD //////////////////////////////////// -->
+<!-- ////////////////////////////////////  HEAD //////////////////////////////////// -->
 
-<!-- ///////////////////  BODY //////////////////////////////////// -->
-<body>
-    <div class="wrap">    
-
-    <h1>DATA SCIENCE 2022/2023</h1>    
-    <p>All about charts, numbers and data stories. </p>
-    
-    <!--BUTTONS-->
-    <a href="portfolio.html" id="button">Portfolio</a>
-    <a href="project.html" id="button">My project</a>
-    <a href="about.html" id="button">About</a>
-    <a href="https://github.com/GibranHamrouniCases/GibranHamrouniCases.github.io" id="button">GitHub Account</a>
+<!-- ////////////////////////////////////  DARK MODE //////////////////////////////////// -->
+<nav>
+    <div class="theme-switch-wrapper">
+         <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <div class="slider round"></div>
+    </label>
+      <em>Enable Dark Mode!</em>
     </div>
+</nav>
+<!-- ////////////////////////////////////  DARK MODE //////////////////////////////////// -->
+
+<!-- ////////////////////////////////////  HEADER //////////////////////////////////// -->
+<header>
+    <div class="header">    
+    <h1>DATA SCIENCE 2022/2023</h1>  
+    
+    <h4>All about charts, numbers and data stories.</h4>
+
+    <!--BUTTONS-->
+    <a href="portfolio.html" id="button">PORTFOLIO</a>
+    <a href="project.html" id="button">MY PROJECT</a>
+    <a href="about.html" id="button">ABOUT</a>
+    <a href="https://github.com/GibranHamrouniCases/GibranHamrouniCases.github.io" id="button">GitHub ACCOUNT</a>
+    </div>
+</header>
+<!-- ////////////////////////////////////  HEADER //////////////////////////////////// -->
+
+<!-- ////////////////////////////////////  BODY //////////////////////////////////// -->
+<body>
+    <div class="doric">
+        <div class="dotbox">
+        
+        </div>  
+        <div class="dotbox">
+        
+        </div>
+        <div class="dotbox">
+        
+        </div>
+        <div class="dotbox">
+        
+        </div>
+    </div> 
 </body>
-<!-- ///////////////////  BODY //////////////////////////////////// -->
+<!-- ////////////////////////////////////  BODY //////////////////////////////////// -->
+
+<!-- ////////////////////////////////////  JS DARK MODE //////////////////////////////////// -->
+<script>
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+    
+        if (currentTheme === 'dark') {
+            toggleSwitch.checked = true;
+        }
+    }
+
+    function switchTheme(e) {
+        if (e.target.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+        else {        document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }    
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
+</script>
+<!-- ////////////////////////////////////  JS DARK MODE //////////////////////////////////// -->
 
 </html>

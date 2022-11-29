@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- ///////////////////  HEAD //////////////////////////////////// -->
+<!-- ////////////////////////////////////  HEAD //////////////////////////////////// -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Document</title>
-
+    <!-- BACKGROUND -->  
+    <style>:root {--bg-color: #e7e7e7; /*GREY*/}
+        [data-theme="dark"] {--bg-color: #818cab;}
+        body {background-color: var(--bg-color)}</style>
     <!-- STYLE SHEET -->
     <link rel="stylesheet" href="index.css">
 
@@ -16,42 +19,62 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 </head>
-<!-- ///////////////////  HEAD //////////////////////////////////// -->
+<!-- ////////////////////////////////////  HEAD //////////////////////////////////// -->
 
-<!-- ///////////////////  BODY //////////////////////////////////// -->
-<body>
-    <div class="mylayout">
-        <h1>Portfolio</h1>
+<!-- ////////////////////////////////////  DARK MODE //////////////////////////////////// -->
+<nav>
+    <div class="theme-switch-wrapper">
+         <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <div class="slider round"></div>
+    </label>
+      <em>Enable Dark Mode!</em>
+    </div>
+</nav>
+<!-- ////////////////////////////////////  DARK MODE //////////////////////////////////// -->
 
+<!-- ////////////////////////////////////  HEADER //////////////////////////////////// -->
+<header>
+    <div class="header">
+        <h1>DATA SCIENCE 2022/2023</h1>
+        <h4>All about charts, numbers and data stories. </h4>
+ 
         <!--BUTTONS-->
-        <a href="index.html" id="button">Home</a>
-        <a href="project.html" id="button">My project</a>
-        <a href="about.html" id="button">About</a>
-        <a href="https://github.com/GibranHamrouniCases/GibranHamrouniCases.github.io" id="button">GitHub Account</a>
+        <a href="index.html" id="button2">HOME</a>
+        <a href="project.html" id="button2">MY PROJECT</a>
+        <a href="about.html" id="button2">ABOUT</a>
+        <a href="https://github.com/GibranHamrouniCases/GibranHamrouniCases.github.io" id="button2">GitHub ACCOUNT</a>
+    </div>
+</header>
+<!-- ////////////////////////////////////  HEADER //////////////////////////////////// -->
 
+<!-- ////////////////////////////////////  BODY //////////////////////////////////// -->
+<body>
+    <div class="body">
         <!--WEEK 1-->
         <h2>WEEK 1</h2>
-
         <h3>UK and France Trade </h3>
-        <p>This first chart represents trade between the United Kingdom and France in billions of dollars.</p>
-        <div class="chart" id="w1chart1"></div>
+        
+        <div class="ionic">
+            <div class="chart" id="w1chart1"></div>
+            <p>This first chart represents trade between the United Kingdom and France in billions of dollars.</p>
 
-        <h3>Foreign Direct Investment in the UK</h3>
-        <p>This Second Chart chart represents inward Foreign Direct Investment in the United Kingdom in billions of dollars.</p>
-        <div class="chart" id="w1chart2"> </div>
+            <div class="chart" id="w1chart2"> </div>
+            <p>This Second Chart chart represents inward Foreign Direct Investment in the United Kingdom in billions of dollars.</p>  
+        </div>
 
         <!--WEEK 2-->
+        <hr class="dotted">
         <h2>WEEK 2</h2>
 
-        <h3>IMF Credit</h3>
         <div class="chart" id="w2chart1"> </div>
 
-        <h3>IMF Exchange Rates</h3>
         <div class="chart" id="w2chart2"> </div>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fuga ipsum eligendi, et ullam doloremque? Sunt placeat eligendi ex magni earum porro exercitationem quod non.</p>
 
         <!--WEEK 3-->
+        <hr class="dotted">
         <h2>WEEK 3</h2>
 
         <div class="chart" id="w3chart1"> </div>
@@ -59,30 +82,36 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fuga ipsum eligendi, et ullam doloremque? Sunt placeat eligendi ex magni earum porro exercitationem quod non.</p>
 
         <!--WEEK 4-->
+        <hr class="dotted">
         <h2>WEEK 4</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium natus incidunt, fugit at rerum beatae hic labore modi ab velit officia. Blanditiis expedita iste nihil, consectetur temporibus tempore eum quos?</p>
         
         <!--WEEK 5-->
+        <hr class="dotted">
         <h2>WEEK 5</h2>
         
         <!--WEEK 6-->
+        <hr class="dotted">
         <h2>WEEK 6</h2>
         <p>NO TASK</p>
 
         <!--WEEK 7-->
+        <hr class="dotted">
         <h2>WEEK 7</h2>
 
         <!--WEEK 8-->
+        <hr class="dotted">
         <h2>WEEK 8</h2>
 
         <!--WEEK 9 & 10-->
+        <hr class="dotted">
         <h2>WEEK 9 & 10</h2>
 
     </div> 
 </body>
-<!-- ///////////////////  BODY //////////////////////////////////// -->
+<!-- ////////////////////////////////////  BODY //////////////////////////////////// -->
 
-<!-- ///////////////////  JS //////////////////////////////////// -->
+<!-- ////////////////////////////////////  JS //////////////////////////////////// -->
 <script>
     //Define charts:
     var w1chart1 = "w1chart1.json";
@@ -100,6 +129,33 @@
     vegaEmbed('#w3chart1', w3chart1);
     vegaEmbed('#w3chart2', w3chart2);
 </script>
-<!-- ///////////////////  JS //////////////////////////////////// -->
+<!-- ////////////////////////////////////  JS //////////////////////////////////// -->
+
+<!-- ////////////////////////////////////  JS DARK MODE //////////////////////////////////// -->
+<script>
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+    
+        if (currentTheme === 'dark') {
+            toggleSwitch.checked = true;
+        }
+    }
+
+    function switchTheme(e) {
+        if (e.target.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+        else {        document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }    
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
+</script>
+<!-- ////////////////////////////////////  JS DARK MODE //////////////////////////////////// -->
 
 </html>
