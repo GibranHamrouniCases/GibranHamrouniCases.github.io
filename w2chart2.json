@@ -2,24 +2,20 @@
 
   "title": {
       "text": "Total IMF Credit Outstanding for all members",
-      "subtitle":"in SDRs ($ Billions) from 1984 - 2022. Source: IMF",
+      "subtitle":"As a Percentage of World GDP. Source: IMF and World Bank",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
       "color": "black"},
   
-  "data":{"url": "https://raw.githubusercontent.com/GibranHamrouniCases/GibranHamrouniCases.github.io/main/data_IMF_creditOutstanding.csv"},
-
-  "transform": [
-    {"calculate": "datum.Totals/1000000000", "as":"billions"}
-  ],
+  "data":{"url": "https://raw.githubusercontent.com/GibranHamrouniCases/GibranHamrouniCases.github.io/main/data_IMF_creditOutstanding_Chart2.csv"},
   
   "height": 300,
   "width": 300,
 
   "mark": {
     "type": "bar",
-    "color": "#003153"},
+    "color": "#ff6361"},
 
 "encoding": {
      "x": {
@@ -32,7 +28,7 @@
          "labelAngle": 45}},
 
       "y": {
-        "field": "billions",
+        "field": "Percentage",
         "type": "quantitative",
         "title": "",
         "axis": {"grid": false}}

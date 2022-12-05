@@ -19,7 +19,7 @@
 
   "mark": {
     "type": "bar",
-    "color": "#003153"},
+    "color": "#ff6361"},
 
 "encoding": {
      "x": {

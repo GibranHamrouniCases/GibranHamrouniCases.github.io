@@ -1,14 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-
-    "XYZdata": {
-       "url": "https://api.allorigins.win/raw?url=https://comtrade.un.org/api/get?max=502&type=C&freq=A&px=HS&ps=all&r=826&p=251&rg=all&cc=TOTAL&fmt=json",
-       "format": {
-           "type":"json",
-           "property": "dataset"}},
-
-
     "data": {
        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/trade/data_tradeUKFrance.json",
        "format": {
@@ -28,7 +20,7 @@
 
     "mark":{
         "type": "line",
-        "color":"seagreen",
+        "color":"#ffa600",
         "strokeWidth":2,
         "opacity":1},
  

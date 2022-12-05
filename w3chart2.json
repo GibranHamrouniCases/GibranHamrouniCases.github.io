@@ -140,8 +140,9 @@
   "encoding": {
     "x": {"field": "Year"},
     "y": {"field": "FDI (US Dollars)", "type": "quantitative"},
-    "color": {"field": "Country", "type": "nominal"},
-    "scale": {"range": ["#cf9fff", "#99ccff", "#0abdc6", "#145084"]}
+    "color": {"field": "Country", 
+    "type": "nominal",
+    "scale": {"range": ["#58508d", "#bc5090", "#ff6361", "#ffa600"]}}
   },
   "config": {}
 }

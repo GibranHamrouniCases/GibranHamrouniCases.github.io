@@ -61,6 +61,7 @@ p{
     color: var(--font-color); /*WHITE*/
     font-family: 'Garamond', sans-serif;
     text-align: justify;
+    font-size: 20px; 
 }
 
 h4{
@@ -184,6 +185,7 @@ hr.dotted{
 
 .ionic{
     column-count: 2;
+    gap: 5%;
 }
 
 .grid-container {
