@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
 
+/* ////////////////////////////////////  BASIC CSS //////////////////////////////////// */
 :root {
     --font-color: white; /*WHITE*/
     --bg-color: #e7e7e7; /*GREY*/
@@ -11,7 +12,7 @@
     --heading-color: black; /*BLACK*/
 }
  [data-theme="dark"] {
-    --font-color: #7d7d7d;
+    --font-color: #f2f2f2;
     --bg-color: #717171;
     --color1:  #001829;
     --color2: #6e5500;
@@ -27,8 +28,8 @@
     padding-bottom: 30px;
 }
 
-/* BODY */
-.body{
+/* BODY rename CORPS (two codes using BODY)*/
+.corps{
     margin: auto;
     width: 95%;
     background-color: var(--color1); /*BLUE*/
@@ -176,7 +177,7 @@ hr.dotted{
     margin-bottom: 50px;
 }
 
-/* COLUMNS */
+/* COLUMNS & GRIDS */
 .doric{
     column-count: 4;
 }
@@ -185,29 +186,22 @@ hr.dotted{
     column-count: 2;
 }
 
-/* DOTTED BOX */
-.dotbox{
-    border: 7px dotted;
-    border-radius: 10px;
-    border-color: var(--heading-color); /*BLACK*/ 
-    width:90%;
-    position: relative;
-    padding-top: 100%;
-    animation: border-pulsate 4s infinite;
+.grid-container {
+    display: grid;
+    gap: 10%;
+    grid-template-columns: auto auto;
+    background-color: transparent;
+    padding: 10px;
 }
 
-/* PUSLING BORDERS */
-@keyframes border-pulsate {
-    0%   { border-color: #e7e7e7; } /*GREY*/
-    50%  { border-color: var(--heading-color); } /*BLACK*/
-    100% { border-color: #e7e7e7; } /*GREY*/
-  }
+/* ////////////////////////////////////  BASIC CSS //////////////////////////////////// */
 
 /* ////////////////////////////////////  DARK MODE SWITCH //////////////////////////////////// */
  .theme-switch-wrapper {
          display: flex;
          align-items: center;
 }
+
  .theme-switch-wrapper em {
          margin-left: 10px;
          font-size: 1rem;
