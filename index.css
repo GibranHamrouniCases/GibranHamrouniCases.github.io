@@ -180,7 +180,7 @@ hr.dotted{
 
 /* COLUMNS & GRIDS */
 .doric{
-    column-count: 4;
+    column-count: 3;
 }
 
 .ionic{
