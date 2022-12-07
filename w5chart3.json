@@ -1,0 +1,37 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "title": {
+        "text": "Trade in Goods - Balance",
+        "subtitle": ["in the UK (£, billions). [ONS, BOKI-QNA]",""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+  
+    "width":280,
+    "height":300,
+  
+    "data": {
+        "url": "https://raw.githubusercontent.com/GibranHamrouniCases/GibranHamrouniCases.github.io/main/data_ONS-BOKI.json",
+        "format": {"type":"json", "property": "years"}},
+  
+      
+    "transform": [
+       {"calculate": "datum.value/1000", "as":"billions"},
+       {"filter": "datum.year>1997"}],
+  
+    "mark":{"type": "line","color":"#ffa600","strokeWidth":2},
+
+  
+    "encoding": {
+          "x": {
+            "field": "date",
+            "type": "temporal",
+            "title":null},
+          "y": {
+            "field": "billions",  
+                          
+            "type": "quantitative",
+            "title":null}}
+  }
