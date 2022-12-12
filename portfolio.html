@@ -19,6 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://unpkg.com/eurostat-map"></script>
 </head>
 <!-- ////////////////////////////////////  HEAD //////////////////////////////////// -->
 
@@ -109,6 +110,8 @@
         <!--WEEK 7-->
         <hr class="dotted">
         <h2>WEEK 7</h2>
+        
+        <svg id="map"></svg>
 
         <!--WEEK 8-->
         <hr class="dotted">
@@ -186,5 +189,36 @@
     toggleSwitch.addEventListener('change', switchTheme, false);
 </script>
 <!-- ////////////////////////////////////  JS DARK MODE //////////////////////////////////// -->
+
+<!-- ////////////////////////////////////  JS EU MAP 2 //////////////////////////////////// -->
+<script>
+    const map = eurostatmap
+        .map("chbi")
+        .title("GDP and Population Density")
+        .nutsLvl(2)
+        .nutsYear(2016)
+        .stat("v1", { eurostatDatasetCode:"demo_r_d3dens", filters:{time: 2019}, unitText: "inh./km²" } )
+        .stat("v2", { eurostatDatasetCode:"NAMA_10R_3GDP", filters:{time: 2019}, unitText: "€ Million" } )
+        .clnb(4)
+        .scale("60M")
+        .legend({ boxFill: "none", squareSize: 80, label1: "GDP", label2: "Population", x:10, y:140, })
+        .drawGraticule(false)
+        .seaFillStyle("#d3dee8")
+        .drawCoastalMargin(false)
+        .zoomExtent([1,2])
+
+        if (window.innerWidth > 800) {
+            map.insets("default")
+        } else {
+            // settings for smaller devices
+            map.legend({ label1: "GDP", label2: "Population", labelDecNb:0, x: window.innerWidth - 150, y:10 })
+            .titleFontSize(12)
+            .botTxtFontSize(6)
+            .tooltip({fontSize:10})
+            .legend({labelFontSize:9})
+        }
+        map.build();
+</script>
+<!-- ////////////////////////////////////  JS EU MAP 2 //////////////////////////////////// -->
 
 </html>
