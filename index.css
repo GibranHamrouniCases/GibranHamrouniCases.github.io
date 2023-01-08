@@ -28,17 +28,17 @@
     padding-bottom: 30px;
 }
 
-/* BODY rename CORPS (two codes using BODY)*/
-.corps{
+/* BODY */
+.body{
     margin: auto;
     width: 95%;
-    background-color: var(--color1); /*BLUE*/
     color: var(--font-color);
     border:25px;
     border-color:transparent;
     border-style: solid;
     border-radius: 50px;
     text-align: center;
+    box-align: center;
 }
 
 /* H1, H2, H3, H4 */
@@ -52,15 +52,22 @@ h1{
 }
 
 h2, h3{
-    color: var(--font-color); /*WHITE*/
+    color: var(--heading-color); /*WHITE*/
+    font-family: 'Garamond', sans-serif;
+    text-align: center;
+}
+
+h5{
+    font-size: 35px; 
+    color: var(--heading-color); /*WHITE*/
     font-family: 'Garamond', sans-serif;
     text-align: center;
 }
 
 p{
-    color: var(--font-color); /*WHITE*/
+    color: var(--heading-color); /*WHITE*/
     font-family: 'Garamond', sans-serif;
-    text-align: justify;
+    text-align: center;
     font-size: 20px; 
 }
 
@@ -75,25 +82,19 @@ h4{
 }
 
 sup {
-    color: var(--font-color); /*WHITE*/
+    color: var(--heading-color); /*WHITE*/
     font-family: 'Garamond', sans-serif;
-    text-align: justify;
+    text-align: center;
     vertical-align: super;
     font-size: 10px;
 }
 
-/* CHART */
-.chart{
-    padding: 20px;
-    background-color: none;
-}
 
 /* BUTTONS */
 #button{
     background-color: var(--bg-color); /*GREY*/
     border: none;
     border-radius: 10px;
-    width: 20%;
     color: var(--heading-color); /*BLACK*/
     font-weight: bolder;
     padding: 16px 32px;
@@ -111,12 +112,11 @@ sup {
     color: var(--bg-color); /*GREY*/
 }
 
-#button2{
-    background-color: var(--color1); /*BLUE*/
+#myBtn{
+    background-color: var(--bg-color); /*GREY*/
     border: none;
     border-radius: 10px;
-    width: 20%;
-    color: var(--font-color); /*WHITE*/
+    color: var(--heading-color); /*BLACK*/
     font-weight: bolder;
     padding: 16px 32px;
     text-align: center;
@@ -128,59 +128,15 @@ sup {
     cursor: pointer; 
 }
 
-#button2:hover{
-    background-color: var(--font-color); /*WHITE*/
-    color: var(--color1); /*BLUE*/
-}
-
-#button3{
-    background-color: var(--color2); /*YELLOW*/
-    border: none;
-    border-radius: 10px;
-    width: 20%;
-    color: var(--font-color); /*WHITE*/
-    font-weight: bolder;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer; 
-}
-
-#button3:hover{
-    background-color: var(--font-color); /*WHITE*/
-    color: var(--color2); /*YELLOW*/
-}
-
-#button4{
-    background-color: var(--color3);  /*RED*/
-    border: none;
-    border-radius: 10px;
-    width: 20%;
-    color: var(--font-color); /*WHITE*/
-    font-weight: bolder;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer; 
-}
-
-#button4:hover{
-    background-color: var(--font-color); /*WHITE*/
-    color: var(--color3);  /*RED*/
+#myBtn:hover{
+    background-color: var(--heading-color); /*BLACK*/
+    color: var(--bg-color); /*GREY*/
 }
 
 /* STYLE HR */
 hr.dotted{
     border: none;
-    border-top: 7px dotted var(--font-color); /*WHITE*/
+    border-top: 7px dotted var(--heading-color); /*WHITE*/
     width:100%;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -197,6 +153,77 @@ hr.dotted{
     border-color: rgb(50, 50, 50);
     margin-bottom: 0.5cm;
     display: inline-block;    
+}
+
+.chart2{
+    width: 470px;
+    border-width: 10px;
+    border-right: 10px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    margin-bottom: 0.5cm;
+    display: inline-block;   
+    margin: 30px;
+}
+
+.chart3{
+    width: 600px;
+    width:auto;
+    height: auto;
+    border-width: 10px;
+    border-right: 10px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    margin: 30px;
+    margin-bottom: 0.5cm;
+    display: inline-block;    
+}
+
+.chart4{
+    width: 400px;
+    border-width: 10px;
+    border-right: 10px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    margin-bottom: 0.5cm;
+    display: inline-block;   
+    margin: 30px;
+}
+
+.box {
+    width: 750px;
+    border-width: 10px;
+    border-right: 10px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    margin: 30px;
+    display: inline-block;  
+}
+
+img {
+    width: 100%; /* takes the 100 % width of its container (.box div)*/
+    height: 100%; /* takes the 100 % height of its container (.box div)*/
+    box-align: center
+}
+
+.logo{
+    width: 300px;
+    border-width: 10px;
+    border-right: 10px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    margin: 30px;
+    display: inline-block;  
 }
 
 /* ////////////////////////////////////  BASIC CSS //////////////////////////////////// */

@@ -10,7 +10,7 @@
     <title>DS 2022/2023</title>
     <!-- BACKGROUND -->  
     <style>:root {--bg-color: #e7e7e7; /*GREY*/}
-        [data-theme="dark"] {--bg-color: #717171;}
+        [data-theme="dark"] {--bg-color: Black;}
         body {background-color: var(--bg-color)}</style>
     <!-- STYLE SHEET -->
     <link rel="stylesheet" href="index.css">
@@ -24,6 +24,8 @@
 <!-- ////////////////////////////////////  HEAD //////////////////////////////////// -->
 
 <!-- ////////////////////////////////////  DARK MODE //////////////////////////////////// -->
+<!-- 
+    DEACTIVATED
 <nav>
     <div class="theme-switch-wrapper">
          <label class="theme-switch" for="checkbox">
@@ -33,41 +35,47 @@
       <em>Dark Mode</em>
     </div>
 </nav>
+-->
 <!-- ////////////////////////////////////  DARK MODE //////////////////////////////////// -->
 
 <!-- ////////////////////////////////////  HEADER //////////////////////////////////// -->
 <header>
     <div class="header">
-        <h1>DATA SCIENCE 2022/2023</h1>
-        <h4>All about charts, numbers and data stories. </h4>
+        <h1> DATA <span style="color:white"> SCIENCE </span> <span style="color:#E6002B">2022/2023 </span></h1>  
+        <h4>By Gibran Hamrouni Cases </h4>
  
         <!--BUTTONS-->
-        <a href="index.html" id="button2">HOME</a>
-        <a href="project.html" id="button2">MY PROJECT</a>
-        <a href="https://github.com/GibranHamrouniCases/GibranHamrouniCases.github.io" id="button2">GitHub ACCOUNT</a>
+        <a href="index.html" id="button">HOME</a>
+        <a href="portfolio.html" id="button">PORTFOLIO</a>
+        <a href="project.html" id="button">PROJECT</a>
+        <a href="https://github.com/GibranHamrouniCases/GibranHamrouniCases.github.io" id="button">GITHUB</a>
+        <a href="https://rapidcharts.io/datascience" id="button">COURSE</a>
     </div>
 </header>
 <!-- ////////////////////////////////////  HEADER //////////////////////////////////// -->
 
 <!-- ////////////////////////////////////  BODY //////////////////////////////////// -->
 <body>
-    <div class="corps">
+    <div class="body">
+        <h5> DATA: <span style="color:white"> VISUALISATION </span>  <span style="color:#E6002B">PORTFOLIO </span> </h5>
+
         <!--WEEK 1-->
+        <hr class="dotted">
         <h2>WEEK 1: SETTING UP & EMBEDDING</h2>
         <h3>UK and France Trade </h3>
         
-        <div class="chart" id="w1chart1"></div>
+        <div class="chart2" id="w1chart1"></div>
         <p>This first chart represents trade between the United Kingdom and France in billions of dollars.</p>
         
-        <div class="chart" id="w1chart2"> </div>
+        <div class="chart2" id="w1chart2"> </div>
         <p>This Second Chart chart represents inward Foreign Direct Investment in the United Kingdom in billions of dollars.</p>  
 
         <!--WEEK 2-->
         <hr class="dotted">
         <h2>WEEK 2: TWO CHARTS, FT & FIRST ORIGINAL</h2>
 
-        <div class="chart" id="w2chart1"> </div>
-        <div class="chart" id="w2chart2"> </div>
+        <div class="chart2" id="w2chart1"> </div>
+        <div class="chart2" id="w2chart2"> </div>
 
         <p>As a percentage of World GDP, the IMF had its highest outstanding credit in 1984 making it the most 'risky' year.</p>
 
@@ -75,8 +83,8 @@
         <hr class="dotted">
         <h2>WEEK 3: TWO CHARTS, DATA OBJECTS & VISUAL ENCODING</h2>
 
-        <div class="chart" id="w3chart1"> </div>
-        <div class="chart" id="w3chart2"> </div>
+        <div class="chart3" id="w3chart1"> </div>
+        <div class="chart3" id="w3chart2"> </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fuga ipsum eligendi, et ullam doloremque? Sunt placeat eligendi ex magni earum porro exercitationem quod non.</p>
 
         <!--WEEK 4-->
@@ -87,15 +95,15 @@
         <!--WEEK 5-->
         <hr class="dotted">
         <h2>WEEK 5: DASHBOARD, NINE CHARTS</h2>
-        <div class="chart" id="w5chart1"> </div>
-        <div class="chart" id="w5chart2"> </div>
-        <div class="chart" id="w5chart3"> </div>
-        <div class="chart" id="w5chart4"> </div>
-        <div class="chart" id="w5chart5"> </div>
-        <div class="chart" id="w5chart6"> </div>
-        <div class="chart" id="w5chart7"> </div>
-        <div class="chart" id="w5chart8"> </div>
-        <div class="chart" id="w5chart9"> </div>
+        <div class="chart4" id="w5chart1"> </div>
+        <div class="chart4" id="w5chart2"> </div>
+        <div class="chart4" id="w5chart3"> </div>
+        <div class="chart4" id="w5chart4"> </div>
+        <div class="chart4" id="w5chart5"> </div>
+        <div class="chart4" id="w5chart6"> </div>
+        <div class="chart4" id="w5chart7"> </div>
+        <div class="chart4" id="w5chart8"> </div>
+        <div class="chart4" id="w5chart9"> </div>
        
         <!--WEEK 6-->
         <hr class="dotted">
@@ -122,8 +130,7 @@
         <hr class="dotted">
         <h2>WEEK 10 & 11: MACHINE LEARNING</h2>
 
-        <div class="chart" id="f1_AD"> </div>
-
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </div> 
 </body>
 <!-- ////////////////////////////////////  BODY //////////////////////////////////// -->
@@ -148,8 +155,6 @@
     var w5chart9 = "w5chart9.json";
     var w7chart1 = "w7chart1.json";
 
-    var f1_AD = "f1_AD.json";
-
     // Embed charts:
     vegaEmbed('#w1chart1', w1chart1);
     vegaEmbed('#w1chart2', w1chart2);
@@ -167,10 +172,32 @@
     vegaEmbed('#w5chart8', w5chart8);
     vegaEmbed('#w5chart9', w5chart9);
     vegaEmbed('#w7chart1', w7chart1);
-
-    vegaEmbed('#f1_AD', f1_AD);
 </script>
 <!-- ////////////////////////////////////  JS CHARTS //////////////////////////////////// -->
+
+<!-- ////////////////////////////////////  BACK TO TOP BUTTON //////////////////////////////////// -->
+<script>
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+<!-- ////////////////////////////////////  BACK TO TOP BUTTON //////////////////////////////////// -->
 
 <!-- ////////////////////////////////////  JS DARK MODE //////////////////////////////////// -->
 <script>
