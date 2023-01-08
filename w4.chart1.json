@@ -15,7 +15,7 @@
     "data":{"url": "https://raw.githubusercontent.com/GibranHamrouniCases/GibranHamrouniCases.github.io/main/w4_data.csv"},
   
     "encoding": {
-      "y": {"field": "Driver", "type": "ordinal", "sort": [null]},
+      "y": {"field": "Driver", "type": "ordinal"},
       "x": {"field": "km/h", "type": "quantitative", "scale": {"domain": [0, 210]}}
     },
     "layer": [{
