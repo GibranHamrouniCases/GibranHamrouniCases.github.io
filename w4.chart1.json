@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Bar chart with text labels. Set domain to make the frame cover the labels.",
+    "title": {
+        "text": "Formula 1 2022 Abu Dhabi GP",
+        "subtitle": ["Top Speeds (km/h). [www.motorsport.com]",""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+
+    "width":280,
+    "height":300,
+
+    "data":{"url": "https://raw.githubusercontent.com/GibranHamrouniCases/GibranHamrouniCases.github.io/main/w4_data.csv"},
+  
+    "encoding": {
+      "y": {"field": "Driver", "type": "ordinal", "sort": [null]},
+      "x": {"field": "km/h", "type": "quantitative", "scale": {"domain": [0, 210]}}
+    },
+    "layer": [{
+      "mark": "bar"
+    }, {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 3
+      },
+      "encoding": {
+        "text": {"field": "km/h", "type": "quantitative"}
+      }
+    }]
+  }
+  
