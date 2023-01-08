@@ -1,0 +1,49 @@
+Driver,Cla,Chassis,Engine,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58
+Nico Rosberg,1,Mercedes,Mercedes,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,,
+Lewis Hamilton,2,Mercedes,Mercedes,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,,
+Kimi Raikkonen,3,Ferrari,Ferrari,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,,
+Sebastian Vettel,4,Ferrari,Ferrari,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,,,
+Daniel Ricciardo,6,Red Bull,Renault,SS,SS,SS,SS,SS,SS,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,,
+Daniil Kvyat,10,Red Bull,Renault,SS,SS,SS,SS,SS,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,,
+Lewis Hamilton,1,Mercedes,Mercedes,US,US,US,US,US,US,US,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,,
+Nico Rosberg,2,Mercedes,Mercedes,US,US,US,US,US,US,US,US,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,,
+Sebastian Vettel,3,Ferrari,Ferrari,US,US,US,US,US,US,US,US,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,,,
+Max Verstappen,4,Red Bull,TAG,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,,
+Daniel Ricciardo,5,Red Bull,TAG,SS,SS,SS,SS,SS,SS,SS,SS,SS,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,,
+Kimi Raikkonen,6,Ferrari,Ferrari,US,US,US,US,US,US,US,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,,
+Valtteri Bottas,1,Mercedes,Mercedes,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,,,
+Lewis Hamilton,2,Mercedes,Mercedes,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,,,
+Sebastian Vettel,3,Ferrari,Ferrari,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,,,
+Kimi Raikkonen,4,Ferrari,Ferrari,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,,,
+Max Verstappen,5,Red Bull,TAG,US,US,US,US,US,US,US,US,US,US,US,US,US,US,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,,,
+Daniel Ricciardo,,Red Bull,TAG,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,SS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Lewis Hamilton,1,Mercedes,Mercedes,US,US,US,US,US,US,US,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,,,
+Sebastian Vettel,2,Ferrari,Ferrari,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,,,
+Max Verstappen,3,Red Bull,TAG,HS,HS,HS,HS,HS,HS,HS,HS,HS,HS,HS,HS,HS,HS,HS,HS,HS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,,,
+Daniel Ricciardo,4,Red Bull,TAG,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,,,
+Valtteri Bottas,5,Mercedes,Mercedes,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,SS,US,US,US,US,US,US,US,US,US,US,US,US,US,US,US,,,
+Kimi Raikkonen,,Ferrari,Ferrari,US,US,US,US,US,US,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Lewis Hamilton,1,Mercedes,Mercedes,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,,,
+Max Verstappen,2,Red Bull,Honda,M,M,M,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,,,
+Charles Leclerc,3,Ferrari,Ferrari,M,M,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,,,
+Valtteri Bottas,4,Mercedes,Mercedes,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,,,
+Sebastian Vettel,5,Ferrari,Ferrari,S,S,S,S,S,S,S,S,S,S,S,S,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,,,
+Alex Albon,6,Red Bull,Honda,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,,,
+Max Verstappen,1,Red Bull,Honda,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,,,
+Valtteri Bottas,2,Mercedes,Mercedes,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,,,
+Lewis Hamilton,3,Mercedes,Mercedes,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,,,
+Alex Albon,4,Red Bull,Honda,S,S,S,S,S,S,S,S,S,S,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,,,
+Charles Leclerc,13,Ferrari,Ferrari,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,,,
+Sebastian Vettel,14,Ferrari,Ferrari,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,,,
+Max Verstappen,1,Red Bull,Honda,S,S,S,S,S,S,S,S,S,S,S,S,S,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,S,S,S,S,S
+Lewis Hamilton,2,Mercedes,Mercedes,M,M,M,M,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H
+Carlos Sainz,3,Ferrari,Ferrari,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H
+Valtteri Bottas,6,Mercedes,Mercedes,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H
+Charles Leclerc,10,Ferrari,Ferrari,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M
+Sergio Perez,15,Red Bull,Honda,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,S,S,,,
+Max Verstappen,1,Red Bull,Red Bull,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H
+Charles Leclerc,2,Ferrari,Ferrari,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H
+Sergio Perez,3,Red Bull,Red Bull,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H
+Carlos Sainz,4,Ferrari,Ferrari,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H
+George Russell,5,Mercedes,Mercedes,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M
+Lewis Hamilton,18,Mercedes,Mercedes,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,M,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H,H

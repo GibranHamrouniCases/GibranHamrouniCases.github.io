@@ -74,6 +74,14 @@ h4{
     padding-bottom: 25px;
 }
 
+sup {
+    color: var(--font-color); /*WHITE*/
+    font-family: 'Garamond', sans-serif;
+    text-align: justify;
+    vertical-align: super;
+    font-size: 10px;
+}
+
 /* CHART */
 .chart{
     padding: 20px;
@@ -189,24 +197,6 @@ hr.dotted{
     border-color: rgb(50, 50, 50);
     margin-bottom: 0.5cm;
     display: inline-block;    
-}
-
-/* COLUMNS & GRIDS */
-.doric{
-    column-count: 3;
-}
-
-.ionic{
-    column-count: 2;
-    gap: 5%;
-}
-
-.grid-container {
-    display: grid;
-    gap: 10%;
-    grid-template-columns: auto auto;
-    background-color: transparent;
-    padding: 10px;
 }
 
 /* ////////////////////////////////////  BASIC CSS //////////////////////////////////// */
