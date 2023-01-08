@@ -1,49 +1,49 @@
-Driver,Cla,Chassis,Engine
-Nico Rosberg,First,Mercedes,Mercedes
-Lewis Hamilton,Second,Mercedes,Mercedes
-Kimi Raikkonen,Third,Ferrari,Ferrari
-Sebastian Vettel,Fourth,Ferrari,Ferrari
-Daniel Ricciardo,Sixth,Red Bull,Renault
-Daniil Kvyat,Low,Red Bull,Renault
-Lewis Hamilton,First,Mercedes,Mercedes
-Nico Rosberg,Second,Mercedes,Mercedes
-Sebastian Vettel,Third,Ferrari,Ferrari
-Max Verstappen,Fourth,Red Bull,TAG
-Daniel Ricciardo,Fifth,Red Bull,TAG
-Kimi Raikkonen,Sixth,Ferrari,Ferrari
-Valtteri Bottas,First,Mercedes,Mercedes
-Lewis Hamilton,Second,Mercedes,Mercedes
-Sebastian Vettel,Third,Ferrari,Ferrari
-Kimi Raikkonen,Fourth,Ferrari,Ferrari
-Max Verstappen,Fifth,Red Bull,TAG
-Daniel Ricciardo,Ret,Red Bull,TAG
-Lewis Hamilton,First,Mercedes,Mercedes
-Sebastian Vettel,Second,Ferrari,Ferrari
-Max Verstappen,Third,Red Bull,TAG
-Daniel Ricciardo,Fourth,Red Bull,TAG
-Valtteri Bottas,Fifth,Mercedes,Mercedes
-Kimi Raikkonen,Ret,Ferrari,Ferrari
-Lewis Hamilton,First,Mercedes,Mercedes
-Max Verstappen,Second,Red Bull,Honda
-Charles Leclerc,Third,Ferrari,Ferrari
-Valtteri Bottas,Fourth,Mercedes,Mercedes
-Sebastian Vettel,Fifth,Ferrari,Ferrari
-Alex Albon,Sixth,Red Bull,Honda
-Max Verstappen,First,Red Bull,Honda
-Valtteri Bottas,Second,Mercedes,Mercedes
-Lewis Hamilton,Third,Mercedes,Mercedes
-Alex Albon,Fourth,Red Bull,Honda
-Charles Leclerc,Low,Ferrari,Ferrari
-Sebastian Vettel,Low,Ferrari,Ferrari
-Max Verstappen,First,Red Bull,Honda
-Lewis Hamilton,Second,Mercedes,Mercedes
-Carlos Sainz,Third,Ferrari,Ferrari
-Valtteri Bottas,Sixth,Mercedes,Mercedes
-Charles Leclerc,Low,Ferrari,Ferrari
-Sergio Perez,Low,Red Bull,Honda
-Max Verstappen,First,Red Bull,Red Bull
-Charles Leclerc,Second,Ferrari,Ferrari
-Sergio Perez,Third,Red Bull,Red Bull
-Carlos Sainz,Fourth,Ferrari,Ferrari
-George Russell,Fifth,Mercedes,Mercedes
-Lewis Hamilton,Low,Mercedes,Mercedes
+Driver,Cla,Cla,Chassis,Engine
+Nico Rosberg,First,Podium,Mercedes,Mercedes
+Lewis Hamilton,Second,Podium,Mercedes,Mercedes
+Kimi Raikkonen,Third,Podium,Ferrari,Ferrari
+Sebastian Vettel,Fourth,NotPodium,Ferrari,Ferrari
+Daniel Ricciardo,Sixth,NotPodium,Red Bull,Renault
+Daniil Kvyat,Low,NotPodium,Red Bull,Renault
+Lewis Hamilton,First,Podium,Mercedes,Mercedes
+Nico Rosberg,Second,Podium,Mercedes,Mercedes
+Sebastian Vettel,Third,Podium,Ferrari,Ferrari
+Max Verstappen,Fourth,NotPodium,Red Bull,TAG
+Daniel Ricciardo,Fifth,NotPodium,Red Bull,TAG
+Kimi Raikkonen,Sixth,NotPodium,Ferrari,Ferrari
+Valtteri Bottas,First,Podium,Mercedes,Mercedes
+Lewis Hamilton,Second,Podium,Mercedes,Mercedes
+Sebastian Vettel,Third,Podium,Ferrari,Ferrari
+Kimi Raikkonen,Fourth,NotPodium,Ferrari,Ferrari
+Max Verstappen,Fifth,NotPodium,Red Bull,TAG
+Daniel Ricciardo,Ret,NotPodium,Red Bull,TAG
+Lewis Hamilton,First,Podium,Mercedes,Mercedes
+Sebastian Vettel,Second,Podium,Ferrari,Ferrari
+Max Verstappen,Third,Podium,Red Bull,TAG
+Daniel Ricciardo,Fourth,NotPodium,Red Bull,TAG
+Valtteri Bottas,Fifth,NotPodium,Mercedes,Mercedes
+Kimi Raikkonen,Ret,NotPodium,Ferrari,Ferrari
+Lewis Hamilton,First,Podium,Mercedes,Mercedes
+Max Verstappen,Second,Podium,Red Bull,Honda
+Charles Leclerc,Third,Podium,Ferrari,Ferrari
+Valtteri Bottas,Fourth,NotPodium,Mercedes,Mercedes
+Sebastian Vettel,Fifth,NotPodium,Ferrari,Ferrari
+Alex Albon,Sixth,NotPodium,Red Bull,Honda
+Max Verstappen,First,Podium,Red Bull,Honda
+Valtteri Bottas,Second,Podium,Mercedes,Mercedes
+Lewis Hamilton,Third,Podium,Mercedes,Mercedes
+Alex Albon,Fourth,NotPodium,Red Bull,Honda
+Charles Leclerc,Low,NotPodium,Ferrari,Ferrari
+Sebastian Vettel,Low,NotPodium,Ferrari,Ferrari
+Max Verstappen,First,Podium,Red Bull,Honda
+Lewis Hamilton,Second,Podium,Mercedes,Mercedes
+Carlos Sainz,Third,Podium,Ferrari,Ferrari
+Valtteri Bottas,Sixth,NotPodium,Mercedes,Mercedes
+Charles Leclerc,Low,NotPodium,Ferrari,Ferrari
+Sergio Perez,Low,NotPodium,Red Bull,Honda
+Max Verstappen,First,Podium,Red Bull,Red Bull
+Charles Leclerc,Second,Podium,Ferrari,Ferrari
+Sergio Perez,Third,Podium,Red Bull,Red Bull
+Carlos Sainz,Fourth,NotPodium,Ferrari,Ferrari
+George Russell,Fifth,NotPodium,Mercedes,Mercedes
+Lewis Hamilton,Low,NotPodium,Mercedes,Mercedes
